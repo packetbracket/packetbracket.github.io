@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpendScout by PacketBracket</title>
+  <meta name="description" content="SpendScout writes down your spending for you, from wallet and bank payment alerts. Private by design.">
+  <style>
+    :root {
+      --ground: #f6f7f5;
+      --surface: #ffffff;
+      --ink: #16191d;
+      --muted: #5b636b;
+      --hairline: #e3e6e3;
+      --accent: #0e6b5c;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #0f1419;
+        --surface: #161d24;
+        --ink: #eef2f4;
+        --muted: #95a1ac;
+        --hairline: #25303a;
+        --accent: #4fc3a9;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 36px 0 8px; }
+    p, li { color: var(--ink); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--hairline);
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    ul { padding-left: 1.25rem; }
+    footer { margin-top: 48px; font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SpendScout</h1>
+  <p class="muted">Expense tracker for Android, by PacketBracket</p>
+
+  <p>SpendScout writes down your spending for you. Every time your wallet or bank app shows a payment
+    alert, SpendScout adds that payment to one clean list: the amount, who you paid and a category.
+    Your payments stay on your phone.</p>
+
+  <div class="card">
+    <p><a href="privacy.html">Privacy policy</a></p>
+    <p>Support: <a href="mailto:packetbracket@gmail.com">packetbracket@gmail.com</a></p>
+  </div>
+
+  <footer>© 2026 PacketBracket</footer>
+</main>
+</body>
+</html>
